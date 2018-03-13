@@ -52,6 +52,7 @@
                 <input type="submit" name="submit" value="Entrar"/>
                 <input type="reset" name="borar" value="Borrar"/>
             </fieldset>    
+		    //esta es una nueva linea
         </form>
     </div>
 	
