@@ -1,0 +1,28 @@
+http://localhost/phpmyadmin/
+////////////////////////////////////////////////////////////////////
+CREATE DATABASE Buenaventura;
+USE Buenaventura;
+CREATE TABLE `Usuario` (
+	`Num_Doc` INTEGER NOT NULL,
+	`Pnom` VARCHAR(15) NOT NULL,
+	`Snom` VARCHAR(15) NOT NULL,
+	`Pap` VARCHAR(15) NOT NULL,
+	`Sap` VARCHAR(15) NOT NULL,
+	`Email` VARCHAR(150) NOT NULL,
+	`Pas` VARCHAR(150) NOT NULL,
+	PRIMARY KEY(`Num_Doc`)
+) ENGINE=INNODB;
+CREATE TABLE `Libros` (
+	`LibCod` VARCHAR(100) NOT NULL COMMENT 'Codigo del Libro',
+	`LibNom` VARCHAR(100) NOT NULL COMMENT 'Nombre del Libro',
+	`LibFeL` VARCHAR(20) NOT NULL COMMENT 'Fecha de lanzamiento del libro',
+	`LibNump` VARCHAR(100) NOT NULL COMMENT 'Numero de Paginas del Libro',
+	`LibDesc` VARCHAR(200) NOT NULL,
+	`LibImg` VARCHAR(500) NOT NULL,
+	PRIMARY KEY(`LibCod`)
+) ENGINE=INNODB;
+
+INSERT INTO Libros values("1","	
+Electronica","15/09/1985","250","Con este libro aprendemos electronica","C:\xampp\htdocs\CAMILA\Img\LIBROS\1.JPG"),
+("2","Muestreo","12/12/2016","521","Con este libro vemos muestras", "C:\xampp\htdocs\CAMILA\Img\LIBROS\2.JPG"),
+("3","Calculo","15/12/2016","180","Con este libro vemos matematica", "C:\xampp\htdocs\CAMILA\Img\LIBROS\3.JPG");
